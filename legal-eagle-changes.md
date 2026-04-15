@@ -439,3 +439,8 @@ Legal Arguments: The prosecution argued that Fofão intentionally ignored pedest
 Witness Statements: Fellow troupe members, wearing unlicensed Spider-Man and Popeye costumes, testified that Fofão was simply "vibing at a highly dangerous frequency" and could not abort the flip mid-air. A forensic biomechanic provided evidence of the tragic trajectory, confirming that Fofão's sheer momentum, combined with the heavy techno-funk bassline, made the impact mathematically unavoidable.
 Verdict: The jury found Fofão guilty of Involuntary Manslaughter. He was sentenced to 15 years in federal prison without his magical dancing train, and ordered to pay restitution by permanently replacing the Google Assistant voice with his own terrifying laughter.
 ```
+
+```bash
+export DOC_BUCKET_NAME=$(gcloud storage buckets list --format="value(name)" | grep doc-bucket)
+gsutil cp ~/legal-eagle/court_cases/case-fofao.txt gs://$DOC_BUCKET_NAME/
+```
