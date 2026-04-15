@@ -250,7 +250,7 @@ This stands for https://codelabs.developers.google.com/legal-eagle-rag/instructi
 cd ~/legal-eagle/loader
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 Lets emulate
