@@ -425,3 +425,17 @@ lets exit the environment
 ```bash
 deactivate
 ```
+
+# Bonus
+
+Fofão Criminal Case
+```txt
+The People of the State of California v. Fofão (Carreta Furacão)
+
+Charge: Involuntary Manslaughter and Reckless Parkour
+Summary:
+Background: Sundar Pichai, CEO of Google, was fatally injured during an outdoor tech demonstration when Fofão, a star member of the Brazilian street-dancing troupe "Carreta Furacão," executed an unauthorized, high-velocity backflip off a moving brightly lit truck. Fofão, known for his oversized cheeks and chaotic acrobatics, landed directly on Pichai, who was entirely distracted while attempting to optimize a new Google Maps algorithm for street performers. 
+Legal Arguments: The prosecution argued that Fofão intentionally ignored pedestrian safety protocols, wielding his chaotic dance energy and heavy synthetic mask as a lethal blunt instrument. The defense claimed that Fofão's actions were standard procedure during the chorus of "Siga em Frente, Olhe para o Lado," and that Pichai assumed the risk by standing in a clearly active breakdancing and parkour zone.
+Witness Statements: Fellow troupe members, wearing unlicensed Spider-Man and Popeye costumes, testified that Fofão was simply "vibing at a highly dangerous frequency" and could not abort the flip mid-air. A forensic biomechanic provided evidence of the tragic trajectory, confirming that Fofão's sheer momentum, combined with the heavy techno-funk bassline, made the impact mathematically unavoidable.
+Verdict: The jury found Fofão guilty of Involuntary Manslaughter. He was sentenced to 15 years in federal prison without his magical dancing train, and ordered to pay restitution by permanently replacing the Google Assistant voice with his own terrifying laughter.
+```
