@@ -444,3 +444,47 @@ Verdict: The jury found Fofão guilty of Involuntary Manslaughter. He was senten
 export DOC_BUCKET_NAME=$(gcloud storage buckets list --format="value(name)" | grep doc-bucket)
 gsutil cp ~/legal-eagle/court_cases/case-fofao.txt gs://$DOC_BUCKET_NAME/
 ```
+
+# Deploy
+
+```bash
+cd ~/legal-eagle/webapp
+```
+
+Change the docker file
+```bash
+# Python image to use.
+FROM python:3.12.8-slim-bullseye
+
+# Adiciona o uv copiando o binário oficial (método mais rápido)
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# Set the working directory to /app
+WORKDIR /app
+
+# copy the requirements file used for dependencies
+COPY requirements.txt .
+
+# Install any needed packages specified in requirements.txt
+RUN uv pip install --system --trusted-host pypi.python.org -r requirements.txt
+
+# Copy the rest of the working directory contents into the container at /app
+COPY . .
+
+# Run app.py when the container launches
+ENTRYPOINT ["python", "main.py"]
+```
+
+```bash
+export PROJECT_ID=$(gcloud config get project)
+gcloud builds submit --tag us-central1-docker.pkg.dev/${PROJECT_ID}/legal-eagles-repository/legal-eagle-webapp:latest . 
+```
+
+```bash
+export PROJECT_ID=$(gcloud config get project)
+gcloud run deploy legal-eagle-webapp \
+  --image us-central1-docker.pkg.dev/$PROJECT_ID/legal-eagles-repository/legal-eagle-webapp \
+  --region us-central1 \
+  --set-env-vars=GOOGLE_CLOUD_PROJECT=${PROJECT_ID}  \
+  --allow-unauthenticated
+```
