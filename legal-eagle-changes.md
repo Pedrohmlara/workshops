@@ -55,7 +55,7 @@ from langchain_google_vertexai import VertexAI
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
 # Connect to resourse needed from Google Cloud
-llm = VertexAI(model_name="gemini-2.0-flash")
+llm = VertexAI(model_name="gemini-2.5-flash")
 def ask_llm(query):
     try:
         query_message = {
