@@ -445,6 +445,27 @@ export DOC_BUCKET_NAME=$(gcloud storage buckets list --format="value(name)" | gr
 gsutil cp ~/legal-eagle/court_cases/case-fofao.txt gs://$DOC_BUCKET_NAME/
 ```
 
+Galego do Buggy //case-12.txt
+```txt
+The State of Rio Grande do Norte v. Galego do Buggy
+
+Charge: Involuntary Manslaughter and Unlicensed "Com Emoção" Aerospace Launch
+
+Summary:
+
+Background: Elon Musk, CEO of Tesla and SpaceX, was fatally launched into the stratosphere during an outdoor tech demonstration 
+of a new autonomous "Cyber-Buggy" in the Genipabu dunes. The defendant, a veteran local buggy driver known simply as "Galego do Buggy," 
+took manual control of the vehicle and asked the fateful local question: "Com emoção ou sem emoção?" (With or without emotion?). 
+When Musk smugly answered "Maximum emotion," Galego executed a high-velocity, unauthorized 90-degree drift on a vertical sand wall. 
+Musk, unaccustomed to the sheer chaotic G-force of a 1990s fiberglass buggy powered by a modified Fusca engine, was ejected perfectly 
+over the dunes and vanished into the horizon.
+```
+
+```bash
+export DOC_BUCKET_NAME=$(gcloud storage buckets list --format="value(name)" | grep doc-bucket)
+gsutil cp ~/legal-eagle/court_cases/case-12.txt gs://$DOC_BUCKET_NAME/
+```
+
 # Deploy
 
 ```bash
