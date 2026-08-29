@@ -12,7 +12,7 @@ https://console.cloud.google.com/artifacts
 https://console.cloud.google.com/run
 https://console.cloud.google.com/eventarc
 
-## 0 - CREDITS/PROJETC
+## 0 - Credits/Project
 
 - Get the credits on the https://me.developers.google.com/benefits/claim/{event-link}
 - Then on CloudSheel `git clone https://github.com/Pedrohmlara/workshops.git`
